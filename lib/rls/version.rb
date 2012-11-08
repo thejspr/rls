@@ -1,3 +1,3 @@
-module Rls
+module RLS
   VERSION = "0.0.1"
 end

@@ -1,4 +1,10 @@
 require "rls/version"
 
-module Rls
+module RLS
+  class Runner
+    def self.run(options)
+      puts options
+      exit
+    end
+  end
 end

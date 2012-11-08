@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require 'trollop'
+require 'rls'
+
+options = Trollop::options do
+  version "rls v#{RLS::VERSION} 2012"
+  banner <<-EOS
+rls v#{RLS::VERSION} is a Heroku deployment wrapper
+
+Usage: rls [options]
+where [options] are:
+EOS
+
+  opt :debug, 'Only print, not perform actions', :default => false
+end
+
+RLS::Runner.run(options)
