@@ -5,7 +5,7 @@ require 'rls/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'rls'
-  gem.version       = Rls::VERSION
+  gem.version       = RLS::VERSION
   gem.authors       = ['Jesper Kjeldgaard']
   gem.email         = ['thejspr@gmail.com']
   gem.description   = %q{All in one deploy command for Heroku apps}
@@ -19,5 +19,5 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'trollop', '~>2.0'
 
-  gem.add_development_dependency 'rspec', '~>2.11'
+  gem.add_development_dependency 'rspec', '~>2.13'
 end

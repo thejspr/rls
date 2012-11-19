@@ -6,7 +6,7 @@ require 'trollop'
 require 'rls'
 
 options = Trollop::options do
-  version "rls v#{RLS::VERSION} 2012"
+  version "rls v#{RLS::VERSION} by @thejspr"
   banner <<-EOS
 rls v#{RLS::VERSION} is a Heroku deployment wrapper
 
@@ -14,7 +14,12 @@ Usage: rls [options]
 where [options] are:
 EOS
 
-  opt :debug, 'Only print, not perform actions', :default => false
+  opt :remote, 'Remote git repo', default: 'heroku'
+  opt :app_name,'Newrelic app name', default: ''
+  opt :env, 'Override environment', default: ''
+  opt :branch, 'Branch to push', default: 'master'
+  opt :force, 'Force push update', default: false
+  opt :debug, 'Only print, not perform actions', default: false
 end
 
 RLS::Runner.run(options)
