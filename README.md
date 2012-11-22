@@ -1,6 +1,6 @@
 # RLS [Release]
 
-Heroku deployment script.
+Heroku deployment wrapper.
 
 ## Installation
 
@@ -18,12 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* tests!
+* notify airbrake
+* create diff/changelog
+* push to origin
+* run migrations
 
 ## Contributing
 
 1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
+2. Create your feature branch (`git checkout -b release-brainz`)
+3. Commit your changes (`git commit -am 'Add mega release brainz'`)
+4. Push to the branch (`git push origin release-brainz`)
 5. Create new Pull Request

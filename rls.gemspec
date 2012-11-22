@@ -18,6 +18,4 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
 
   gem.add_dependency 'trollop', '~>2.0'
-
-  gem.add_development_dependency 'rspec', '~>2.13'
 end
