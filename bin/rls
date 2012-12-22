@@ -2,8 +2,8 @@
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
-require 'trollop'
 require 'rls'
+require 'trollop'
 
 options = Trollop::options do
   version "rls v#{RLS::VERSION} by @thejspr"
